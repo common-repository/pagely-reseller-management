@@ -1,0 +1,87 @@
+/* main wrapper element */
+#pp {
+	min-height: 400px;
+}
+/* we use this alot to hide elements */
+.hide {display: none;}
+
+.pagely_form fieldset {}
+.pagely_form fieldset section.sp {}
+.pagely_form label {}
+.pagely_form input[type=text] {}
+.pagely_form input[type=text].narrow {}
+.pagely_form input:active,.pagely_form input:focus {}
+
+/* basic form field placement styling */
+.pagely_form .control-group label.control-label {
+   float: left;
+   padding-top: 5px;
+   text-align: right;
+   width: 140px;
+   display: block;
+   margin-bottom: 5px;
+   font-size: 14px;
+   font-weight: normal;
+   line-height: 20px;
+}
+.pagely_form .control-group {
+	margin-bottom: 20px;
+}
+
+.pagely_form .controls {
+   margin-left: 160px;
+}
+.pagely_form .form-actions .btn {
+	margin-left: 20px;
+}
+
+#legal_dialog {
+	max-height: 350px;
+	overflow: scroll;
+	border:1px solid #ccc;
+	padding:10px;
+	display:none;
+}
+
+.showcode {
+	text-align: left;
+}
+/* shows the error background image in input for non-valid */
+.pagely_form input.error {border: 1px solid #d64c4c; box-shadow: 0px 0px 4px #f8988d;color:#111;background: #fff3f3;}
+/* shows the ok background image in input for non-valid */
+.pagely_form input.valid,.pagely_form input:focus.remote.valid  {color:#426a3a; border-color: #75b768;background: #f6ffea;}
+
+/* required */
+.pagely_form p label span.req {color:#cc0000;}
+/* change label color on field error */
+.pagely_form label.error,.pagely_form .help-block.alert-danger {color: #cc0000;}
+/* mimics WordPress form descritpion styling, desc of field */
+.pagely_form span.help-inline {font-style: italic;}
+
+
+/* progress bar */
+div#progress {border:1px solid #ccc;border-radius: 5px;width: 100%;height:35px;background:#f1f1f1;margin:1em 0 2em;}
+div#progress span.meter {
+	border-right:1px solid #ccc;
+	display: block;
+	height:35x;
+	border-radius: 5px 0 0 5px;
+	background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(229,229,229,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+}
+.progress_title {
+	line-height:35px;
+	padding:0 1em;
+	color:#444;
+	font-size: 12px;
+	font-weight: bold;
+	text-shadow: 0px 0px 8px #fff;
+
+}
